@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Roboto:wght@400;700&display=swap');
+/*
+font-family: 'Kalam', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(6, 6, 39);
+    text-align: center;
+    overflow: hidden
+}
+
+.div-hight{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-game {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#myVideo{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.1;
+}
+
+#start-game h1{
+    font-family: 'Lobster', cursive;
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#start-game #play{
+    margin-top: 10px;
+    z-index: 1;
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, rgb(61, 2, 161),rgb(224, 31, 237),rgb(45, 200, 248) ,rgb(68, 243, 41));
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(2, 235, 248, 0.153);
+}
+
+.status{
+    width: 100%;
+    padding: 32px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 255, 255, 0.708);
+}
+
+
+#main-body{
+    background-color: rgb(4, 5, 5);
+    height: 520px;
+    width: 560px;
+    border: solid 18px black;
+    border-radius: 50%;
+    overflow: hidden;
+    display : grid;
+    grid-template-columns: auto auto;
+    column-gap: 18px;
+    row-gap: 18px;
+    position: relative;
+    box-shadow: 2px 2px 15px  rgba(3, 89, 89, 0.826);
+}
+
+.box{
+    border-radius: 4%;
+    box-shadow: inset 0px 0px 20px  rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+#green-box{
+    background-color: rgb(32, 224, 6);
+}
+
+#red-box{
+    background-color: rgb(249, 5, 5);
+}
+
+#yellow-box{
+    background-color: yellow;
+}
+
+#blue-box {
+    background-color: rgb(24, 73, 250);
+}
+
+.middle-box{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 2.7rem;
+    font-family: 'Lobster', cursive;
+    color: aliceblue;
+    box-shadow: 0px 0px 20px  rgb(0, 0, 0);
+}
+
+#scoreBoard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#speed_btn-holder{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+}
+
+.speedBtn{
+    height: 35px;
+    width: 90px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(243, 246, 249);
+    background-color: rgb(171, 169, 169);
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px  rgba(1, 65, 65, 0.826);
+    transition: 0.1s;
+}
+
+.active_speed{
+    background-color: rgb(4, 210, 221);
+    color: rgb(253, 252, 252);
+}
+

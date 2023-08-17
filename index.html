@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simon Game</title>
+    <link rel="icon" href="Simon game.png">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div id="start-game" class="div-hight">
+        <video autoplay muted loop id="myVideo">
+            <source src="istockphoto-1327214211-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <h1>Let's Start The Game</h1>
+        <button id="play">PLAY</button>
+    </div>
+
+    <div class="container div-hight">
+
+        <div id="update" class="status">
+            <span>Watch!  &  Play!</span>
+        </div>
+
+        <div id="main-body">
+            <div class="box" id="green-box"></div>
+            <div class="box" id="red-box"></div>
+            <div class="box" id="yellow-box"></div>
+            <div class="box" id="blue-box"></div>
+        </div>
+
+        <div id="middle">
+            <p>Simon Game</p>
+        </div>
+        <div id="scoreBoard" class="status">
+            <div>Score : <span id="score">0</span></div>
+            <div id="speed_btn-holder">
+                <div class="status">Speed :</div>
+                <button class="speedBtn active_speed">Auto</button>
+                <button class="speedBtn">Slow</button>
+                <button class="speedBtn">Normal</button>
+                <button class="speedBtn">Fast</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+
